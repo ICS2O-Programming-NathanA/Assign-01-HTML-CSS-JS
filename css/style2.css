@@ -3,11 +3,20 @@
  * This CSS file defines the style for index.html 
 */
 body {
-	background-color: Black;
+	background-color: white;
 }
 
 h5 {
-	color: hsl(3, 0%, 100%);
+	color: black;
   padding: 40px;
   text-align: center;
+}
+
+p {
+	color: black;
+	text-align: center;
+}
+
+button {
+	text-align: center;
 }
