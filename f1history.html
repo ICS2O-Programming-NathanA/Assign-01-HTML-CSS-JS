@@ -9,10 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="./css/style2.css">
 		<!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png">
-    <link rel="manifest" href="./fav_index/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
+    <link rel="manifest" href="./fav/site.webmanifest">
 		
 		<!-- Google's MDL -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -21,6 +21,13 @@
 		    <title>Formula 1</title>
   </head>
 	<body>
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script>
+      function myButtonClicked() {
+        alert("Correct!")
+      }
+    </script>
+		
 		<!-- Always shows a header, even in smaller screens. -->
 		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 		  <header class="mdl-layout__header">
@@ -38,8 +45,8 @@
 		    <span class="mdl-layout-title">Formula 1</span>
 		    <nav class="mdl-navigation">
 		      <a class="mdl-navigation__link" href="index.html">Home</a>
+		      <a class="mdl-navigation__link" href="WhatIsF1">Introduction</a>
 		      <a class="mdl-navigation__link" href="f1history.html">History</a>
-		      <a class="mdl-navigation__link" href="">Link</a>
 		      <a class="mdl-navigation__link" href="">Link</a>
 		    </nav>
 		  </div>
@@ -47,12 +54,35 @@
 		<br></br>
 		<br></br>
 		<h5>The History of F1</h5>
-		<p>The first formula 1 race was the 1946 Turin Grand Prix. The first world championship race took place at Silverstone in the England in 1950.Giuseppe Farina was the first ever world champion. F1 was originally known as Formula A.The most F1 World Championships is 7 and two drivers have gotten 7. The two drivers are Michael Schumacher and Lewis Hamilton. People think Michael Schumacher was the best driver while others think its Hamilton. Who do you think is better? 
-		</p>
+		<p class="p1">The first formula 1 race was the 1946 Turin Grand Prix. The first world championship race took place at Silverstone in the England in 1950.Giuseppe Farina was the first ever world champion. F1 was originally known as Formula A.The most F1 World Championships is 7 and two drivers have gotten 7. The two drivers are Michael Schumacher and Lewis Hamilton. People think Michael Schumacher was the best driver while others think its Hamilton. Who do you think is better? 
+	</p.p1>
+		
+		<!-- Radio Buttons -->
+		<center><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+  		<input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+  		<span class="mdl-radio__label">Michael Schumacher</span>
+		</label>
+		<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+  		<input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+  		<span class="mdl-radio__label">Lewis Hamilton</span>
+		</label></center>
+		<br></br>
+		<center><p class="p2"> Quiz Time! What track held the the first ever World Championship?</p></center>
+		<!-- Simple Textfield -->
+			<center><form action="#">
+  		<div class="mdl-textfield mdl-js-textfield">
+    		<input class="mdl-textfield__input" type="text" id="sample1">
+    		<label class="mdl-textfield__label" for="sample1">Text...</label>
+  		</div>
+		</form></center>
 		
 		<!-- Accent-colored raised button with ripple -->
-			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-  			Button
-			</button>
+		<center><button onclick="myButtonClicked()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  Confirm
+		</button></center>
+		<br></br>
+		<p class="p3">This is a picture of the silverstone F1 track</p.p3>
+		<br></br>
+		<center><img src="/image/silverstone.jpg"></center>
 	</body>
 </html>
