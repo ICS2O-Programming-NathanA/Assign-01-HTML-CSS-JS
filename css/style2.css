@@ -58,3 +58,10 @@ img {
 	border: 6px solid #ffffff ;
 	border-radius: 25px;
 }
+
+#video1{
+	max-width: 38%;
+	max-height: 100%;
+	border: 6px solid #ffffff;
+	border-radius: 30px;
+}
