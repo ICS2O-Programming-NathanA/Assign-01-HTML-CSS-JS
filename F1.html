@@ -15,18 +15,18 @@
     <link rel="manifest" href="./fav/site.webmanifest">
 		
 		<!-- Google's MDL -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
- 		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-red.min.css" /> 
-		<script defer src="https://code.getmdl.io/1.3.0/material.min.js">						</script>
+			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ 			<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-red.min.css" /> 
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js">							</script>
 		    <title>Formula 1</title>
-  </head>
-	<body>
-		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script>
+  	</head>
+		<body>
+			<script defer src="https://code.getmdl.io/1.3.0/material.min.js">						</script>
+    	<script>
       function myButtonClicked() {
-        alert("Correct!")
+        alert("The correct answer is 3!")
       }
-    </script>
+    	</script>
 		
 		<!-- Always shows a header, even in smaller screens. -->
 		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -47,9 +47,38 @@
 		      <a class="mdl-navigation__link" href="index.html">Home</a>
 		      <a class="mdl-navigation__link" href="F1">Introduction</a>
 		      <a class="mdl-navigation__link" href="f1history.html">History</a>
-		      <a class="mdl-navigation__link" href="">Link</a>
 		    </nav>
 		  </div>
-			<br></br>
-			<center><h3>Formula 1</h3></center>
 		</div>
+		<br></br>
+		<br></br>
+		<center><h3>Formula 1</h3></center>
+		<br></br>
+		<center><p class="p1">Formula 1 is a motosport. Formula 1 races take place on weekends and it goes throughout the whole weekend. On the friday of the race weekend the drivers do 2 free practises. They can test out the track and determine if they need to make ajustements. They have 90 minutes for all the free practises. On saturday morning they have another free practise. Then they have qualifiers. This determines where they will start on the grid. Then on Sunday they have the race. There is currently 20 drivers and 10 teams in F1.</p.p1></center>
+
+		<!-- Quiz -->
+		<center><p class="p2">Quiz Time! How many Free Practises are there in a race weekend? 	</p.p2></center>
+			
+		<!-- Numeric Textfield with Floating Label -->
+		<center><form action="#">
+		  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+		    <label class="mdl-textfield__label" for="sample4">Number...</label>
+		    <span class="mdl-textfield__error">That's not a number silly!</span>
+		  </div>
+		</form></center>
+			
+		<!-- Accent-colored raised button with ripple -->
+		<center><button onclick="myButtonClicked()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  Submit
+		</button></center>
+		<br></br>
+		<center><img src="/image/F1teams_drivers.webp"> <img src="/image/f1car.jpg"></center>
+			<br></br>
+		<center><p class="p4">Are you excited for the 2022 F1 Season? Use the slider! Left being No and right being Yes.</p.p4></center>
+		<br></br>
+		<!-- Slider with Starting Value -->
+		<input class="mdl-slider mdl-js-slider" type="range"
+  min="0" max="100" value="50" tabindex="0">
+	</body>
+</html>

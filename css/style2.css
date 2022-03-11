@@ -17,6 +17,7 @@ h5 {
 	text-align: center;
 	padding-left: 30px;
 	padding-right: 30px;
+	font-size: 22px;
 }
 
 .p2 {
@@ -24,6 +25,7 @@ h5 {
 	text-align: center;
 	padding-left: 30px;
 	padding-right: 30px;
+	font-size: 19px;
 }
 
 .p3 {
@@ -31,6 +33,7 @@ h5 {
 	text-align: center;
 	padding-left: 30px;
 	padding-right: 30px;
+	font-size: 15px;
 }
 
 label {
@@ -47,4 +50,11 @@ label {
 
 .p3 {
   font-family: "Times New Roman", Times, serif;
+}
+
+img {
+	width: 400px;
+	height: 250px;
+	border: 6px solid #ffffff ;
+	border-radius: 25px;
 }
